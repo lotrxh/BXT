@@ -57,7 +57,7 @@
             TempAllTechnology,
             AllTechnology
         );
-        UpdateContext({wangxuhui: "YYDS"})
+        UpdateContext({wangxuhui: "YYDS",liangjia:"NB"})
 
     ConHeader_13 As groupContainer.manualLayoutContainer:
         Fill: =glbBXTBlueColor
