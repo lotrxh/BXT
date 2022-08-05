@@ -56,7 +56,8 @@
         ClearCollect(
             TempAllTechnology,
             AllTechnology
-        )
+        );
+        UpdateContext({wangxuhui: "YYDS"})
 
     ConHeader_13 As groupContainer.manualLayoutContainer:
         Fill: =glbBXTBlueColor
