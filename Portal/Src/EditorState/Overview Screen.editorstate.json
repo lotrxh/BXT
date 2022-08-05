@@ -12244,7 +12244,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CanvasDigital",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12366,7 +12366,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CanvasNav",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13632,7 +13632,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CoverScroll",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21052,7 +21052,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27392,7 +27392,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Line",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
