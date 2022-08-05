@@ -132,6 +132,372 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 414,
+                  "charOffset": 1110,
+                  "snippet": {
+                    "text": "CommentSendEmail.Run(\r\n    TechnologyDetails.'Modified By'.Email,\r\n    \"1\",\r\n    TechnologyDetails.TechnologyTitle,\r\n    LookUp(\r\n        Documents,\r\n        ID = Value(TechnologyDetails.SmailImg)\r\n    ).Thumbnail.Medium,\r\n    TechnologyDetails.TechnologyDescripttion,\r\n    CurrUserProfile.DisplayName,\r\n    ShareLink,\r\n    TechnologyDetails.'Modified By'.DisplayName,\r\n    TechnologyDetails.Title,\r\n    AppLink\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "CommentSendEmail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 448,
+                  "charOffset": 1837,
+                  "snippet": {
+                    "text": "CommentSendEmail.Run(\r\n        ComboBox1_3.Selected.Email,\r\n        \"2\",\r\n        TechnologyDetails.TechnologyTitle,\r\n        LookUp(\r\n            Documents,\r\n            ID = Value(TechnologyDetails.SmailImg)\r\n        ).Thumbnail.Medium,\r\n        TechnologyDetails.TechnologyDescripttion,\r\n        CurrUserProfile.DisplayName,\r\n        ShareLink,\r\n        ComboBox1_3.Selected.DisplayName,\r\n        TechnologyDetails.Title,\r\n        AppLink\r\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "CommentSendEmail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 761,
+                  "charOffset": 1527,
+                  "snippet": {
+                    "text": "If(\r\n    Not(IsBlank(ComboBox1_3.Selected.Email)),\r\n    /*Office365Outlook.SendEmail(\r\n        ComboBox1_3.Selected.Email,\r\n        CurrUserProfile.DisplayName & \" mentioned you on\" & \" [\" & TechnologyDetails.TechnologyTitle & \"] \" & \"on BXT Portal\",\r\n        ShareLink & TechnologyDetails.Title\r\n    )*/\r\n    CommentSendEmail.Run(\r\n        ComboBox1_3.Selected.Email,\r\n        \"2\",\r\n        TechnologyDetails.TechnologyTitle,\r\n        LookUp(\r\n            Documents,\r\n            ID = Value(TechnologyDetails.SmailImg)\r\n        ).Thumbnail.Medium,\r\n        TechnologyDetails.TechnologyDescripttion,\r\n        CurrUserProfile.DisplayName,\r\n        ShareLink,\r\n        ComboBox1_3.Selected.DisplayName,\r\n        TechnologyDetails.Title,\r\n        AppLink\r\n    )\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.BtnPrimary_6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 369,
+                  "charOffset": 900,
+                  "snippet": {
+                    "text": "CommentSendEmail.Run(\r\n    ThisItem.UserEmail,\r\n    \"3\",\r\n    TechnologyDetails.TechnologyTitle,\r\n    LookUp(\r\n        Documents,\r\n        ID = Value(TechnologyDetails.SmailImg)\r\n    ).Thumbnail.Medium,\r\n    TechnologyDetails.TechnologyDescripttion,\r\n    CurrUserProfile.DisplayName,\r\n    ShareLink,\r\n    ThisItem.UserName,\r\n    TechnologyDetails.Title,\r\n    AppLink\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "CommentSendEmail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 448,
+                  "charOffset": 1582,
+                  "snippet": {
+                    "text": "CommentSendEmail.Run(\r\n        ComboBox1_5.Selected.Email,\r\n        \"2\",\r\n        TechnologyDetails.TechnologyTitle,\r\n        LookUp(\r\n            Documents,\r\n            ID = Value(TechnologyDetails.SmailImg)\r\n        ).Thumbnail.Medium,\r\n        TechnologyDetails.TechnologyDescripttion,\r\n        CurrUserProfile.DisplayName,\r\n        ShareLink,\r\n        ComboBox1_5.Selected.DisplayName,\r\n        TechnologyDetails.Title,\r\n        AppLink\r\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "CommentSendEmail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 761,
+                  "charOffset": 1272,
+                  "snippet": {
+                    "text": "If(\r\n    Not(IsBlank(ComboBox1_5.Selected.Email)),\r\n    /*Office365Outlook.SendEmail(\r\n        ComboBox1_5.Selected.Email,\r\n        CurrUserProfile.DisplayName & \" mentioned you on\" & \" [\" & TechnologyDetails.TechnologyTitle & \"] \" & \"on BXT Portal\",\r\n        ShareLink & TechnologyDetails.Title\r\n    )*/\r\n    CommentSendEmail.Run(\r\n        ComboBox1_5.Selected.Email,\r\n        \"2\",\r\n        TechnologyDetails.TechnologyTitle,\r\n        LookUp(\r\n            Documents,\r\n            ID = Value(TechnologyDetails.SmailImg)\r\n        ).Thumbnail.Medium,\r\n        TechnologyDetails.TechnologyDescripttion,\r\n        CurrUserProfile.DisplayName,\r\n        ShareLink,\r\n        ComboBox1_5.Selected.DisplayName,\r\n        TechnologyDetails.Title,\r\n        AppLink\r\n    )\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.GalleryComment_1.ContainerReplyComment_1.BtnPrimary_21"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 369,
+                  "charOffset": 966,
+                  "snippet": {
+                    "text": "CommentSendEmail.Run(\r\n    ThisItem.UserEmail,\r\n    \"3\",\r\n    TechnologyDetails.TechnologyTitle,\r\n    LookUp(\r\n        Documents,\r\n        ID = Value(TechnologyDetails.SmailImg)\r\n    ).Thumbnail.Medium,\r\n    TechnologyDetails.TechnologyDescripttion,\r\n    CurrUserProfile.DisplayName,\r\n    ShareLink,\r\n    ThisItem.UserName,\r\n    TechnologyDetails.Title,\r\n    AppLink\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "CommentSendEmail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 448,
+                  "charOffset": 1648,
+                  "snippet": {
+                    "text": "CommentSendEmail.Run(\r\n        ComboBox1_4.Selected.Email,\r\n        \"2\",\r\n        TechnologyDetails.TechnologyTitle,\r\n        LookUp(\r\n            Documents,\r\n            ID = Value(TechnologyDetails.SmailImg)\r\n        ).Thumbnail.Medium,\r\n        TechnologyDetails.TechnologyDescripttion,\r\n        CurrUserProfile.DisplayName,\r\n        ShareLink,\r\n        ComboBox1_4.Selected.DisplayName,\r\n        TechnologyDetails.Title,\r\n        AppLink\r\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "CommentSendEmail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 761,
+                  "charOffset": 1338,
+                  "snippet": {
+                    "text": "If(\r\n    Not(IsBlank(ComboBox1_4.Selected.Email)),\r\n    /*Office365Outlook.SendEmail(\r\n        ComboBox1_4.Selected.Email,\r\n        CurrUserProfile.DisplayName & \" mentioned you on\" & \" [\" & TechnologyDetails.TechnologyTitle & \"] \" & \"on BXT Portal\",\r\n        ShareLink & TechnologyDetails.Title\r\n    )*/\r\n    CommentSendEmail.Run(\r\n        ComboBox1_4.Selected.Email,\r\n        \"2\",\r\n        TechnologyDetails.TechnologyTitle,\r\n        LookUp(\r\n            Documents,\r\n            ID = Value(TechnologyDetails.SmailImg)\r\n        ).Thumbnail.Medium,\r\n        TechnologyDetails.TechnologyDescripttion,\r\n        CurrUserProfile.DisplayName,\r\n        ShareLink,\r\n        ComboBox1_4.Selected.DisplayName,\r\n        TechnologyDetails.Title,\r\n        AppLink\r\n    )\r\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.GalleryComment.ContainerReplyComment.BtnPrimary_20"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Design Screen'.canDesignGuide.crdColor.Container11.BtnTextLg.FocusedBorderThickness"
                 }
               ],

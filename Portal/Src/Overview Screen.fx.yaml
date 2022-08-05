@@ -57,7 +57,12 @@
             TempAllTechnology,
             AllTechnology
         );
-        UpdateContext({wangxuhui: "YYDS",liangjia:"NB"})
+        UpdateContext(
+            {
+                wangxuhui: "YYDS",
+                liangjia: "NB"
+            }
+        )
 
     ConHeader_13 As groupContainer.manualLayoutContainer:
         Fill: =glbBXTBlueColor
@@ -2537,18 +2542,4 @@
         X: =CanvasNav.Width+CanvasNav.X-Self.Width
         Y: =60
         ZIndex: =6
-
-    Label6 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(131, 24, 75, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(152, 208, 70, 1)
-        Height: =115
-        Size: =13
-        Text: ="2121212121"
-        Width: =341
-        X: =632
-        Y: =288
-        ZIndex: =7
 

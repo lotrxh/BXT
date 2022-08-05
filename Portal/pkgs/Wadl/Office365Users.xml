@@ -251,12 +251,13 @@
       <object name="TrendingDocuments_responses_200_def">
         <property name="value" typeRef="TrendingDocuments_responses_200_def_value_def" />
       </object>
+      <string name="HttpRequest_param_Body_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/office365users">
     <resource path="/{connectionId}/codeless/v1.0/me">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateMyProfile" visibility="advanced" siena:isDeprecated="false" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateMyProfile" actionName="UpdateMyProfile" visibility="advanced" siena:isDeprecated="false" siena:status="Production">
         <doc title="Update my profile&#xA;Updates the profile of the current user" />
         <request>
           <representation mediaType="application/json">
@@ -273,7 +274,7 @@
     </resource>
     <resource path="/{connectionId}/codeless/v1.0/me">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="MyProfileV2" siena:isDeprecated="false" siena:family="MyProfile" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="MyProfileV2" actionName="MyProfile_V2" siena:isDeprecated="false" siena:family="MyProfile" siena:revision="2" siena:status="Production">
         <doc title="Get my profile (V2)&#xA;Retrieves the profile of the current user. Learn more about available fields to select: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user#properties" />
         <request>
           <param style="query" name="$select" type="xs:string">
@@ -287,7 +288,7 @@
     </resource>
     <resource path="/{connectionId}/codeless/v1.0/me/photo/$value">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="PUT" id="UpdateMyPhoto" visibility="advanced" siena:isDeprecated="false" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="PUT" id="UpdateMyPhoto" actionName="UpdateMyPhoto" visibility="advanced" siena:isDeprecated="false" siena:status="Production">
         <doc title="Update my profile photo&#xA;Updates the profile photo of the current user. The size of the photo must be less than 4 MB." />
         <request>
           <param style="header" name="Content-Type" type="xs:string" required="true" default="image/jpeg">
@@ -299,7 +300,7 @@
     </resource>
     <resource path="/{connectionId}/codeless/beta/me/insights/trending">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="MyTrendingDocuments" siena:isDeprecated="false">
+      <method siena:requiresAuthentication="true" name="GET" id="MyTrendingDocuments" actionName="MyTrendingDocuments" siena:isDeprecated="false">
         <doc title="Get my trending documents&#xA;Retrieves the trending documents for the signed in user" />
         <request>
           <param style="query" name="$filter" type="xs:string">
@@ -316,7 +317,7 @@
       <param style="template" name="userId" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="RelevantPeople" visibility="advanced" siena:isDeprecated="false">
+      <method siena:requiresAuthentication="true" name="GET" id="RelevantPeople" actionName="RelevantPeople" visibility="advanced" siena:isDeprecated="false">
         <doc title="Get relevant people&#xA;Get relevant people." />
         <request />
         <response>
@@ -326,7 +327,7 @@
     </resource>
     <resource path="/{connectionId}/users/me">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="MyProfile" visibility="advanced" siena:isDeprecated="true" siena:family="MyProfile" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="MyProfile" actionName="MyProfile" visibility="advanced" siena:isDeprecated="true" siena:family="MyProfile" siena:revision="1" siena:status="Production">
         <doc title="Get my profile (V1)&#xA;Retrieves the profile of the current user." />
         <request />
         <response>
@@ -339,7 +340,7 @@
       <param style="template" name="userId" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="UserProfile" visibility="advanced" siena:isDeprecated="true" siena:family="UserProfile" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="UserProfile" actionName="UserProfile" visibility="advanced" siena:isDeprecated="true" siena:family="UserProfile" siena:revision="1" siena:status="Production">
         <doc title="Get user profile (V1)&#xA;Retrieves the profile of a specific user." />
         <request />
         <response>
@@ -349,7 +350,7 @@
     </resource>
     <resource path="/{connectionId}/users/photo">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="UserPhotoMetadata" siena:isDeprecated="false">
+      <method siena:requiresAuthentication="true" name="GET" id="UserPhotoMetadata" actionName="UserPhotoMetadata" siena:isDeprecated="false">
         <doc title="Get user photo metadata&#xA;Get user photo metadata." />
         <request>
           <param style="query" name="userId" type="xs:string" required="true">
@@ -363,7 +364,7 @@
     </resource>
     <resource path="/{connectionId}/users/photo/value">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="UserPhoto" visibility="advanced" siena:isDeprecated="true" siena:family="UserPhoto" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="UserPhoto" actionName="UserPhoto" visibility="advanced" siena:isDeprecated="true" siena:family="UserPhoto" siena:revision="1" siena:status="Production">
         <doc title="Get user photo (V1)&#xA;Retrieves the photo of the specified user if they have one." />
         <request>
           <param style="query" name="userId" type="xs:string" required="true">
@@ -380,7 +381,7 @@
       <param style="template" name="userId" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="Manager" visibility="advanced" siena:isDeprecated="true" siena:family="Manager" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="Manager" actionName="Manager" visibility="advanced" siena:isDeprecated="true" siena:family="Manager" siena:revision="1" siena:status="Production">
         <doc title="Get manager (V1)&#xA;Retrieves the profile of the specified user's manager." />
         <request />
         <response>
@@ -393,7 +394,7 @@
       <param style="template" name="userId" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="DirectReports" visibility="advanced" siena:isDeprecated="true" siena:family="DirectReports" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="DirectReports" actionName="DirectReports" visibility="advanced" siena:isDeprecated="true" siena:family="DirectReports" siena:revision="1" siena:status="Production">
         <doc title="Get direct reports (V1)&#xA;Retrieves the user profiles of the specified user's direct reports." />
         <request />
         <response>
@@ -403,7 +404,7 @@
     </resource>
     <resource path="/{connectionId}/users">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="SearchUser" visibility="advanced" siena:isDeprecated="true" siena:family="SearchUser" siena:revision="1" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="SearchUser" actionName="SearchUser" visibility="advanced" siena:isDeprecated="true" siena:family="SearchUser" siena:revision="1" siena:status="Production">
         <doc title="Search for users&#xA;Retrieves the user profiles that match the search term." />
         <request>
           <param style="query" name="searchTerm" type="xs:string">
@@ -420,14 +421,17 @@
     </resource>
     <resource path="/{connectionId}/v2/users">
       <param style="template" name="connectionId" type="xs:string" required="true" />
-      <method siena:requiresAuthentication="true" name="GET" id="SearchUserV2" visibility="advanced" siena:isDeprecated="false" siena:family="SearchUser" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="SearchUserV2" actionName="SearchUserV2" visibility="advanced" siena:isDeprecated="false" siena:family="SearchUser" siena:revision="2" siena:status="Production">
         <doc title="Search for users (V2)&#xA;Retrieves the user profiles that match the search term (V2)." />
         <request>
           <param style="query" name="searchTerm" type="xs:string">
-            <doc title="Search string (applies to: display name, given name, surname, mail, mail nickname and user principal name). If not provided then no filtering will be applied." />
+            <doc title="Search string (applies to: display name, given name, surname, mail, mail nickname and user principal name)." />
           </param>
           <param style="query" name="top" type="xs:int">
             <doc title="Limit on the number of results to return. Minimum value is 1. Default value is 1000." />
+          </param>
+          <param style="query" name="isSearchTermRequired" type="xs:boolean" default="true">
+            <doc title="If set to 'Yes' then no user profiles will be returned when the search term is empty. If set to 'No' then no filtering will be applied when the search term is empty." />
           </param>
           <param style="query" name="skipToken" type="xs:string">
             <doc title="Skip token to get next users." />
@@ -443,7 +447,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="UserProfileV2" siena:isDeprecated="false" siena:family="UserProfile" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="UserProfileV2" actionName="UserProfile_V2" siena:isDeprecated="false" siena:family="UserProfile" siena:revision="2" siena:status="Production">
         <doc title="Get user profile (V2)&#xA;Retrieves the profile of a specific user. Learn more about available fields to select: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user#properties" />
         <request>
           <param style="query" name="$select" type="xs:string">
@@ -460,7 +464,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="ManagerV2" siena:isDeprecated="false" siena:family="Manager" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="ManagerV2" actionName="Manager_V2" siena:isDeprecated="false" siena:family="Manager" siena:revision="2" siena:status="Production">
         <doc title="Get manager (V2)&#xA;Retrieves the profile of the specified user's manager. Learn more about available fields to select: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user#properties" />
         <request>
           <param style="query" name="$select" type="xs:string">
@@ -477,7 +481,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="DirectReportsV2" siena:isDeprecated="false" siena:family="DirectReports" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="DirectReportsV2" actionName="DirectReports_V2" siena:isDeprecated="false" siena:family="DirectReports" siena:revision="2" siena:status="Production">
         <doc title="Get direct reports (V2)&#xA;Retrieves the user profiles of the specified user's direct reports. Learn more about available fields to select: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user#properties" />
         <request>
           <param style="query" name="$select" type="xs:string">
@@ -497,7 +501,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="UserPhotoV2" siena:isDeprecated="false" siena:family="UserPhoto" siena:revision="2" siena:status="Production">
+      <method siena:requiresAuthentication="true" name="GET" id="UserPhotoV2" actionName="UserPhoto_V2" siena:isDeprecated="false" siena:family="UserPhoto" siena:revision="2" siena:status="Production">
         <doc title="Get user photo (V2)&#xA;Retrieves the photo of the specified user if they have one" />
         <request />
         <response>
@@ -510,7 +514,7 @@
       <param style="template" name="id" type="xs:string" required="true">
         <doc title="User principal name or id." />
       </param>
-      <method siena:requiresAuthentication="true" name="GET" id="TrendingDocuments" siena:isDeprecated="false">
+      <method siena:requiresAuthentication="true" name="GET" id="TrendingDocuments" actionName="TrendingDocuments" siena:isDeprecated="false">
         <doc title="Get trending documents&#xA;Retrieves the trending documents for a user" />
         <request>
           <param style="query" name="$filter" type="xs:string">
@@ -520,6 +524,44 @@
         <response>
           <representation mediaType="application/json" element="service:TrendingDocuments_responses_200_def" />
         </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/codeless/httprequest">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="HttpRequest" actionName="HttpRequest" visibility="important" siena:isDeprecated="false" siena:status="Preview">
+        <doc title="Send an HTTP request&#xA;Construct a Microsoft Graph REST API request to invoke. These segments are supported: 1st segement: /me, /users/&lt;userId&gt; 2nd segment: messages, mailFolders, events, calendar, calendars, outlook, inferenceClassification. Learn more: https://docs.microsoft.com/en-us/graph/use-the-api." />
+        <request>
+          <param style="header" name="Uri" type="xs:string" required="true">
+            <doc title="The full or relative URI. Example: https://graph.microsoft.com/{version}/{resource}." />
+          </param>
+          <param style="header" name="Method" type="xs:string" required="true" default="GET">
+            <doc title="The HTTP method (default is GET)." />
+            <option value="GET" />
+            <option value="POST" />
+            <option value="PUT" />
+            <option value="PATCH" />
+            <option value="DELETE" />
+          </param>
+          <param style="header" name="ContentType" type="xs:string" default="application/json">
+            <doc title="The content-type header for the body (default is application/json)." />
+          </param>
+          <param style="header" name="CustomHeader1" type="xs:string">
+            <doc title="Custom header 1. Specify in format: header-name: header-value" />
+          </param>
+          <param style="header" name="CustomHeader2" type="xs:string">
+            <doc title="Custom header 2. Specify in format: header-name: header-value" />
+          </param>
+          <param style="header" name="CustomHeader3" type="xs:string">
+            <doc title="Custom header 3. Specify in format: header-name: header-value" />
+          </param>
+          <param style="header" name="CustomHeader4" type="xs:string">
+            <doc title="Custom header 4. Specify in format: header-name: header-value" />
+          </param>
+          <param style="header" name="CustomHeader5" type="xs:string">
+            <doc title="Custom header 5. Specify in format: header-name: header-value" />
+          </param>
+          <representation mediaType="application/octet-stream" />
+        </request>
       </method>
     </resource>
   </resources>
