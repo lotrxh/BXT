@@ -98,7 +98,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "en-US"
+    "UserLocale": "zh-CN"
   },
   "ScreenOrder": [
     "Overview Screen",
