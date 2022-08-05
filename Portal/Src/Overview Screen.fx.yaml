@@ -2537,3 +2537,13 @@
         Y: =60
         ZIndex: =6
 
+    Label6 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="11111111111111111111111111111111"
+        X: =1216
+        Y: =86
+        ZIndex: =7
+
