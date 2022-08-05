@@ -1,0 +1,20 @@
+Screen1 As screen:
+    Fill: =RGBA(255,255,255,1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    OnVisible: |-
+        =ClearCollect(
+            TestData,
+            {Email: "liangjia@chinasofti.com"}
+        )
+
+    Label8 As label:
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: =
+        Width: =670
+        X: =460
+        Y: =40
+        ZIndex: =2
+

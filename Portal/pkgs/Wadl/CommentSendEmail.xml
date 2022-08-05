@@ -1,0 +1,62 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="CommentSendEmail" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="CommentSendEmail" />
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_Initializevariable_Value_def" />
+      <string name="ManualTriggerInput_EmailType_Value_def" />
+      <string name="ManualTriggerInput_Initializevariable_Value_1_def" />
+      <string name="ManualTriggerInput_TechniqueImg_Value_def" />
+      <string name="ManualTriggerInput_TechniqueDescription_Value_def" />
+      <string name="ManualTriggerInput_SenderEamil_Value_def" />
+      <string name="ManualTriggerInput_AppLink_Value_def" />
+      <string name="ManualTriggerInput_UserName_Value_def" />
+      <string name="ManualTriggerInput_TechniqueId_Value_def" />
+      <string name="ManualTriggerInput_Initializevariable_Value_2_def" />
+      <object name="ManualTriggerInput">
+        <property name="Initializevariable_Value" type="string" />
+        <property name="EmailType_Value" type="string" />
+        <property name="Initializevariable_Value_1" type="string" />
+        <property name="TechniqueImg_Value" type="string" />
+        <property name="TechniqueDescription_Value" type="string" />
+        <property name="SenderEamil_Value" type="string" />
+        <property name="AppLink_Value" type="string" />
+        <property name="UserName_Value" type="string" />
+        <property name="TechniqueId_Value" type="string" />
+        <property name="Initializevariable_Value_2" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Initializevariable_Value" path="/Initializevariable_Value" type="xs:string" required="true" />
+            <param style="plain" name="EmailType_Value" path="/EmailType_Value" type="xs:string" required="true" />
+            <param style="plain" name="Initializevariable_Value_1" path="/Initializevariable_Value_1" type="xs:string" required="true" />
+            <param style="plain" name="TechniqueImg_Value" path="/TechniqueImg_Value" type="xs:string" required="true" />
+            <param style="plain" name="TechniqueDescription_Value" path="/TechniqueDescription_Value" type="xs:string" required="true" />
+            <param style="plain" name="SenderEamil_Value" path="/SenderEamil_Value" type="xs:string" required="true" />
+            <param style="plain" name="AppLink_Value" path="/AppLink_Value" type="xs:string" required="true" />
+            <param style="plain" name="UserName_Value" path="/UserName_Value" type="xs:string" required="true" />
+            <param style="plain" name="TechniqueId_Value" path="/TechniqueId_Value" type="xs:string" required="true" />
+            <param style="plain" name="Initializevariable_Value_2" path="/Initializevariable_Value_2" type="xs:string" required="true" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

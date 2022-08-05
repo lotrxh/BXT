@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "9d66f34a-20d3-4c54-b3fd-e582b57d22c2",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "CommentSendEmail",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]
