@@ -87,11 +87,7 @@ App As appinfo:
                 'Environment Variable Definition'.'Schema Name' = "bosch_AppLink"
             ).Value
         );
-        /*Set(
-            ShareLink,
-            "https://apps.powerapps.com/play/4ec8cf01-8c0b-4d93-82e4-82a3fcf3cc58?tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&OnlineStatus=No&Screen=TechnologyDetailsScreen&CurrTechnologyId="
-        );
-        Set(AppLink,"https://apps.powerapps.com/play/4ec8cf01-8c0b-4d93-82e4-82a3fcf3cc58?tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4");*/
+        Set(dasdada,"liangjia.com");
     StartScreen: |-
         =If(
             Param("Screen") = "TechnologyDetailsScreen",
