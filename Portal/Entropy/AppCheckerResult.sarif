@@ -6699,36 +6699,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Overview Screen'.liangjia"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Overview Screen'.liangjia",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "liangjia",
-                "module": "Overview Screen",
-                "type": "'Overview Screen'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Overview Screen'.wangxuhui"
                 }
               ],
