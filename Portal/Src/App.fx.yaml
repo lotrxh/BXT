@@ -1,0 +1,100 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =//按钮颜色
+        Set(
+            glbThemePrimaryColor,
+            ColorValue("#007bc0")
+        );
+        Set(
+            glbButtonHoverColor,
+            ColorValue("#0096e0")
+        );
+        //设置主色
+        Set(
+            glbBXTOrangeColor,
+            ColorValue("#FE6902")
+        );
+        Set(
+            glbBXTLightBlueColor,
+            ColorValue("#02A1F3")
+        );
+        Set(
+            glbBXTPurpleColor,
+            ColorValue("#8C2CEF")
+        );
+        Set(
+            glbBXTBlueColor,
+            ColorValue("#00094A")
+        );
+        //设置功能色
+        Set(
+            glbErrorColor,
+            ColorValue("#EA0016")
+        );
+        Set(
+            glbSuccessColor,
+            ColorValue("#78BE20")
+        );
+        Set(
+            glbWarningColor,
+            ColorValue("#FCAF17")
+        );
+        Set(
+            glbLinkColor,
+            ColorValue("#007bc0")
+        );
+        //设置中性色
+        Set(
+            glbNeutralPrimaryColor,
+            ColorValue("#303031")
+        );
+        Set(
+            glbNeutralSecondaryColor,
+            ColorValue("#606061")
+        );
+        Set(
+            glbNeutralTertiaryColor,
+            ColorValue("#8F9091")
+        );
+        Set(
+            glbNeutralQuaternaryColor,
+            ColorValue("#BFC0C2")
+        );
+        Set(
+            glbNeutralLightColor,
+            ColorValue("#DFDFE0")
+        );
+        Set(
+            glbNeutralLighterColor,
+            ColorValue("#EFF1F2")
+        );
+        Set(
+            CurrUserProfile,
+            Office365Users.MyProfile()
+        );
+        Set(
+            ShareLink,
+            LookUp(
+                'Environment Variable Values',
+                'Environment Variable Definition'.'Schema Name' = "bosch_ShareLink"
+            ).Value
+        );
+        Set(
+            AppLink,
+            LookUp(
+                'Environment Variable Values',
+                'Environment Variable Definition'.'Schema Name' = "bosch_AppLink"
+            ).Value
+        );
+        /*Set(
+            ShareLink,
+            "https://apps.powerapps.com/play/4ec8cf01-8c0b-4d93-82e4-82a3fcf3cc58?tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&OnlineStatus=No&Screen=TechnologyDetailsScreen&CurrTechnologyId="
+        );
+        Set(AppLink,"https://apps.powerapps.com/play/4ec8cf01-8c0b-4d93-82e4-82a3fcf3cc58?tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4");*/
+    StartScreen: |-
+        =If(
+            Param("Screen") = "TechnologyDetailsScreen",
+            'Tool Detail Screen'
+        )
+

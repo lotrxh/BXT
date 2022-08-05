@@ -1,0 +1,233 @@
+{
+  "41941d2e-f381-4a40-90ad-831887b50923": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-125.westus.logic.azure.com:443/workflows/5136a1727d3e4b4b99945c064cbafbd7/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=j0ewGA1CxWvdquezuoyXHC7QvN9YNRqIzUZFRIRZKjM",
+      "workflowEndpoint": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/c3dcdfe3b2ca40eabd831e6b704f5108-50715d33956947eb93981ef85ece574a-env/providers/Microsoft.Logic/workflows/b4f2c5b4-3741-6bad-6169-24389a565aac",
+      "workflowEntityId": "6c8e4c62-25d8-ec11-a7b5-6045bd0054c3",
+      "workflowName": "b4f2c5b4-3741-6bad-6169-24389a565aac",
+      "workflowPath": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/c3dcdfe3b2ca40eabd831e6b704f5108-50715d33956947eb93981ef85ece574a-env/providers/Microsoft.Logic/workflows/b4f2c5b4-3741-6bad-6169-24389a565aac"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "逻辑流",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "43648acc-6335-4e31-ab01-e57e1494c828": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {
+          "value": "6c8e4c62-25d8-ec11-a7b5-6045bd0054c3"
+        },
+        "workflowName": {
+          "value": "be358b19-97c3-46b7-bcb0-5f33f97f9214"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "43648acc-6335-4e31-ab01-e57e1494c828"
+        },
+        "workflowEntityId": {
+          "value": "6c8e4c62-25d8-ec11-a7b5-6045bd0054c3"
+        },
+        "workflowName": {
+          "value": "be358b19-97c3-46b7-bcb0-5f33f97f9214"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UploadImagetoDocument"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "43648acc-6335-4e31-ab01-e57e1494c828"
+    },
+    "dependents": [],
+    "id": "41941d2e-f381-4a40-90ad-831887b50923"
+  },
+  "43648acc-6335-4e31-ab01-e57e1494c828": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Documents"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "41941d2e-f381-4a40-90ad-831887b50923",
+      "f2d681b7-c81c-46d4-8273-1e2f4462f9f9"
+    ],
+    "id": "43648acc-6335-4e31-ab01-e57e1494c828"
+  },
+  "7318bb04-325e-412b-b79b-f883daf28748": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://chinasofti0.sharepoint.com/sites/BoschTooltiks_DEV": {
+        "datasetOverride": {
+          "environmentVariableName": "bosch_shared_sharepointonline_4e5988957e5445e4aa5eb72ce8c031f5",
+          "name": "https://chinasofti0.sharepoint.com/sites/BoschTooltiks_DEV"
+        },
+        "dataSources": {
+          "Documents": {
+            "tableName": "f688d7f7-18bf-4dd3-aa67-00ee61095691",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_1f3a2594797744789b18c6227f34ce5c",
+              "name": "f688d7f7-18bf-4dd3-aa67-00ee61095691"
+            }
+          },
+          "Favorite": {
+            "tableName": "8a3f2c3c-e1f2-4142-8aaa-ed1bcf751b88",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_31be4253efe041019573c594309067c0",
+              "name": "8a3f2c3c-e1f2-4142-8aaa-ed1bcf751b88"
+            }
+          },
+          "SubTaskCategory": {
+            "tableName": "b6c4ecdf-b2ec-45ea-a268-b9471e4f6875",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_88977b1cf5894547a8e2ee7bc24a105d",
+              "name": "b6c4ecdf-b2ec-45ea-a268-b9471e4f6875"
+            }
+          },
+          "TaskList": {
+            "tableName": "bfdfd308-57a0-48f1-9cd2-7b9811531dcc",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_61d11982ce19431a85b7d9ffd1cc3110",
+              "name": "bfdfd308-57a0-48f1-9cd2-7b9811531dcc"
+            }
+          },
+          "Technology": {
+            "tableName": "fbdc7162-0a71-403f-8c7d-213dddb28183",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_e050ecc023034edc86076cfda2daf428",
+              "name": "fbdc7162-0a71-403f-8c7d-213dddb28183"
+            }
+          },
+          "TechnologyComment": {
+            "tableName": "a0ddd007-1320-4fd5-9151-a0cfa75e5870",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_3ce0c9004c1f4ac9b0cf24e13933d939",
+              "name": "a0ddd007-1320-4fd5-9151-a0cfa75e5870"
+            }
+          },
+          "TechnologyDoc": {
+            "tableName": "3c04d0bb-b5b8-4a57-900f-59b10b447ac1",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_05a9681c17e34a309715a9ea984c7e66",
+              "name": "3c04d0bb-b5b8-4a57-900f-59b10b447ac1"
+            }
+          },
+          "TechnologySummary": {
+            "tableName": "2c4f0d77-b5bc-4b27-a698-a82035f19294",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_4de30dd7cbc64558ae0300b536ac8885",
+              "name": "2c4f0d77-b5bc-4b27-a698-a82035f19294"
+            }
+          },
+          "ThumbList": {
+            "tableName": "18b89744-349d-4dcb-aa16-295fa0c56698",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_83cdf985154a494199b4dc2622106733",
+              "name": "18b89744-349d-4dcb-aa16-295fa0c56698"
+            }
+          },
+          "ToolTag": {
+            "tableName": "0188690e-b35d-46fa-a7ec-6db36d9ecf6e",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_f0892d6f846d40a1addb41b44ea99b09",
+              "name": "0188690e-b35d-46fa-a7ec-6db36d9ecf6e"
+            }
+          },
+          "UseMethod": {
+            "tableName": "b39f447b-89ba-4d8a-98ee-320ebbfd2326",
+            "tableNameOverride": {
+              "environmentVariableName": "bosch_shared_sharepointonline_289f38127a49445795d52c623baf7581",
+              "name": "b39f447b-89ba-4d8a-98ee-320ebbfd2326"
+            }
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documents",
+      "Technology",
+      "TechnologyComment",
+      "TechnologyDoc",
+      "TaskList",
+      "Favorite",
+      "SubTaskCategory",
+      "TechnologySummary",
+      "ToolTag",
+      "UseMethod",
+      "ThumbList"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7318bb04-325e-412b-b79b-f883daf28748"
+  },
+  "f2d681b7-c81c-46d4-8273-1e2f4462f9f9": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-08.westus.logic.azure.com:443/workflows/f09af212053e4716881d4c2ecce60062/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=1V7HJaHBFskOX4h66FreTtRZ3_SWBsfSUzb7_mtbBUk",
+      "workflowEndpoint": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/c3dcdfe3b2ca40eabd831e6b704f5108-50715d33956947eb93981ef85ece574a-env/providers/Microsoft.Logic/workflows/7be9eb9d-7944-094c-4f3e-b0c62171fd70",
+      "workflowEntityId": "bcd11575-8bc3-ec11-a7b6-0022480b9db8",
+      "workflowName": "7be9eb9d-7944-094c-4f3e-b0c62171fd70",
+      "workflowPath": "/subscriptions/c44298d0-c055-4569-9fb2-6ab8693eb98a/resourceGroups/c3dcdfe3b2ca40eabd831e6b704f5108-50715d33956947eb93981ef85ece574a-env/providers/Microsoft.Logic/workflows/7be9eb9d-7944-094c-4f3e-b0c62171fd70"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "逻辑流",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "43648acc-6335-4e31-ab01-e57e1494c828": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {
+          "value": "bcd11575-8bc3-ec11-a7b6-0022480b9db8"
+        },
+        "workflowName": {
+          "value": "a7cd49fe-9d2e-4c13-b2bb-81cbaae1ef53"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "43648acc-6335-4e31-ab01-e57e1494c828"
+        },
+        "workflowEntityId": {
+          "value": "bcd11575-8bc3-ec11-a7b6-0022480b9db8"
+        },
+        "workflowName": {
+          "value": "a7cd49fe-9d2e-4c13-b2bb-81cbaae1ef53"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UploadFileToSharepoint"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "43648acc-6335-4e31-ab01-e57e1494c828"
+    },
+    "dependents": [],
+    "id": "f2d681b7-c81c-46d4-8273-1e2f4462f9f9"
+  }
+}

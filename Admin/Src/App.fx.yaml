@@ -1,0 +1,15 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =//设置主色
+        Set(glbThemePrimaryColor,ColorValue("#02A1F3"));Set(glbBXTOrangeColor,ColorValue("#FE6902"));Set(glbBXTLightBlueColor,ColorValue("#02A1F3"));Set(glbBXTPurpleColor,ColorValue("#8C2CEF"));Set(glbBXTBlueColor,ColorValue("#00094A"));
+        //设置功能色
+        Set(glbErrorColor,ColorValue("#EA0016"));Set(glbSuccessColor,ColorValue("#78BE20"));Set(glbWarningColor,ColorValue("#FCAF17"));Set(glbLinkColor,ColorValue("#008ECF"));
+        //设置中性色
+        Set(glbNeutralPrimaryColor,ColorValue("#303031"));Set(glbNeutralSecondaryColor,ColorValue("#606061"));Set(glbNeutralTertiaryColor,ColorValue("#8F9091"));Set(glbNeutralQuaternaryColor,ColorValue("#BFC0C2"));Set(glbNeutralLightColor,ColorValue("#DFDFE0"));Set(glbNeutralLighterColor,ColorValue("#EFF1F2"));
+        // 预加载数据
+        ClearCollect(TechnologyDataCol,ShowColumns(SortByColumns(Technology,"Created",Ascending),"Title","TechnologyTitle","TechnologyDescripttion","TagList","SubTaskId","SubTitle1","SubTitle2","ReferenceResources","ID","HotStatus","ThumbsCount","HowtoUseHight","OnlineStatus","BTXType","ViewsCount","Editor","IsDel"));
+        Set(PreviewUrl,LookUp('Environment Variable Values', 'Environment Variable Definition'.'Schema Name' = "bosch_PreviewUrl").Value);
+        Set(DocUrl,LookUp('Environment Variable Values', 'Environment Variable Definition'.'Schema Name' = "bosch_DocUrl").Value)
+    StartScreen: =Home
+
