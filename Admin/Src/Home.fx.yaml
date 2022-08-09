@@ -249,6 +249,7 @@ Home As screen:
                     UpdateContext({requerdbxt: true});
                     UpdateContext({requerdtag: true});
                     UpdateContext({requerdhottag: true});
+                    UpdateContext({requerdNumber: true});
                     UpdateContext({TechNum: Blank()});
                     //***************重置组件********************
                 PaddingBottom: =0
@@ -561,6 +562,7 @@ Home As screen:
                         UpdateContext({requerdbxt: false});
                         UpdateContext({requerdtag: false});
                         UpdateContext({requerdhottag: false});
+                        UpdateContext({requerdNumber: false});
                         // 为了处理上次缓存的数据
                         Concurrent(
                             Reset(DataCardValue2_3),
@@ -1985,7 +1987,7 @@ Home As screen:
                         HtmlText1_8 As htmlViewer:
                             Color: =glbNeutralSecondaryColor
                             Height: =24
-                            HtmlText: ="<font color=red>*</font> SortNo (Only positive integers can be entered)"
+                            HtmlText: ="<font color=red>*</font> SortNumber"
                             PaddingLeft: =0
                             PaddingRight: =0
                             PaddingTop: =0
@@ -2008,8 +2010,8 @@ Home As screen:
                             HoverBorderColor: =ColorFade(Self.BorderColor, -20%)
                             HoverFill: =ColorFade(Self.Fill, -5%)
                             OnChange: |-
-                                =//UpdateContext({num1:Abs(Value(Self.Text))})
-                                If(Value(Self.Text)<0,UpdateContext({TechNum:Abs(Value(Self.Text))}))//Reset(TextInput2_30))
+                                =UpdateContext({requerdNumber:If(IsBlank(Self.Text),true,false)});
+                                If(Value(Self.Text)<0,UpdateContext({TechNum:Abs(Value(Self.Text))}))
                             PaddingBottom: =0
                             PaddingLeft: =10
                             PaddingRight: =0
@@ -2840,7 +2842,7 @@ Home As screen:
                         HoverFill: =ColorFade(Self.Fill, -15%)
                         OnSelect: |-
                             =If(
-                                requerdName || requerdDescript || requerdPhase || requerdsubtask || requerdbxt || requerdtag || requerdhottag,
+                                requerdName || requerdDescript || requerdPhase || requerdsubtask || requerdbxt || requerdtag || requerdhottag||requerdNumber,
                                 Notify(
                                     "请检查必填字段！",
                                     Warning,
@@ -3141,8 +3143,16 @@ Home As screen:
                         =ClearCollect(
                             SubTaskCol,
                             Filter(
-                                SubTaskCategory,
-                                 CategoryName = ComboBox1_10.Selected.TaskName||IsBlank(ComboBox1_10.Selected.TaskName),
+                                AddColumns(
+                                    SubTaskCategory,
+                                    "TaskId",
+                                    LookUp(
+                                        TaskList,
+                                        TaskName = CategoryName,
+                                        Title
+                                    )
+                                ),
+                                CategoryName = ComboBox1_10.Selected.TaskName || IsBlank(ComboBox1_10.Selected.TaskName),
                                 StartsWith(
                                     SubTaskName,
                                     TextInput2_7.Text
@@ -3186,7 +3196,7 @@ Home As screen:
             SubTaskGallery As gallery.galleryVertical:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height-220
-                Items: =Sort(SubTaskCol,Created, Descending)
+                Items: =SortByColumns(SubTaskCol,"TaskId",Ascending,"SubSortNo", Ascending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
                 TemplateSize: =42
@@ -4558,7 +4568,7 @@ Home As screen:
                 HoverFill: =ColorFade(Self.Fill, -15%)
                 OnSelect: |
                     =If(// 表单校验
-                        IsBlank(ComboBox1_2) || IsBlank(TextInput2_25),
+                        IsBlank(ComboBox1_2) || IsBlank(TextInput2_25)||IsBlank(TextInput2_29),
                         Notify(
                             "表单不得为空！",
                             Warning,
@@ -4659,7 +4669,7 @@ Home As screen:
                 Text: ="Save"
                 Width: =90
                 X: =20
-                Y: =310
+                Y: =345
                 ZIndex: =24
 
             Label1_132 As label:
@@ -4759,10 +4769,10 @@ Home As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =11
-                Text: ="Sort Number (Maximum 30 Number)"
+                Text: ="Sort Number"
                 Width: =298
                 X: =20
-                Y: =238
+                Y: =252
                 ZIndex: =31
 
             TextInput2_29 As text:
@@ -4794,7 +4804,7 @@ Home As screen:
                 Size: =12
                 Width: =560
                 X: =20
-                Y: =262
+                Y: =276
                 ZIndex: =32
 
     ContainerAddTagBox As groupContainer.manualLayoutContainer:
