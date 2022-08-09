@@ -232,7 +232,7 @@ Home As screen:
                         Reset(TextInput2_23);
                         Reset(GalleryHow);
                         Clear(HowUseDataCol);
-                        
+                        Reset(TextInput2_30)
                     );
                     Set(
                         imagebate64Value,
@@ -249,7 +249,7 @@ Home As screen:
                     UpdateContext({requerdbxt: true});
                     UpdateContext({requerdtag: true});
                     UpdateContext({requerdhottag: true});
-                    UpdateContext({TechNo:Blank()});
+                    UpdateContext({TechNum: Blank()});
                     //***************重置组件********************
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -1997,7 +1997,7 @@ Home As screen:
                             BorderThickness: =1
                             Color: =glbNeutralPrimaryColor
                             Default: |
-                                =If(EditTechniquesflag,GalleryTechniquesList.Selected.TechSoftNo,TechNo)
+                                =If(EditTechniquesflag,GalleryTechniquesList.Selected.TechSoftNo,TechNum)
                             FocusedBorderColor: =glbNeutralSecondaryColor
                             FocusedBorderThickness: =1
                             Format: =TextFormat.Number
@@ -2007,7 +2007,7 @@ Home As screen:
                             HoverFill: =ColorFade(Self.Fill, -5%)
                             OnChange: |-
                                 =//UpdateContext({num1:Abs(Value(Self.Text))})
-                                If(Value(Self.Text)<0,UpdateContext({TechNo:Abs(Value(Self.Text))}))//Reset(TextInput2_30))
+                                If(Value(Self.Text)<0,UpdateContext({TechNum:Abs(Value(Self.Text))}))//Reset(TextInput2_30))
                             PaddingBottom: =0
                             PaddingLeft: =10
                             PaddingRight: =0
@@ -2865,7 +2865,8 @@ Home As screen:
                                             ReferenceResources: RichTextEditor1_4.HtmlText,
                                             HowtoUseHight: Value(TextInput2_23.Text),
                                             OnlineStatus: "N",
-                                            IsDel: 0
+                                            IsDel: 0,
+                                            TechSoftNo:Value(TextInput2_30.Text)
                                         }
                                     );
                                     If(
@@ -2925,7 +2926,8 @@ Home As screen:
                                             ReferenceResources: RichTextEditor1_4.HtmlText,
                                             HowtoUseHight: Value(TextInput2_23.Text),
                                             OnlineStatus: "N",
-                                            IsDel: 0
+                                            IsDel: 0,
+                                            TechSoftNo:Value(TextInput2_30.Text)
                                         }
                                     );
                                     If(
