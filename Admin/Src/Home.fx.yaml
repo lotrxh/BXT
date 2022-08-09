@@ -1148,7 +1148,7 @@ Home As screen:
                             HoverColor: =Self.Color
                             HoverFill: =ColorFade(Self.Fill, -5%)
                             IsSearchable: =false
-                            Items: =["Hot","New"," "]
+                            Items: =["Hot","New","N/A"]
                             OnChange: |-
                                 =UpdateContext({requerdhottag:If(IsBlank(Self.Selected.Value),true,false)})
                             PaddingLeft: =10
@@ -2438,6 +2438,14 @@ Home As screen:
                             Width: =86
                             X: =869
                             ZIndex: =25
+
+                        Label9_2 As label:
+                            Color: =RGBA(128, 128, 128, 1)
+                            Height: =30
+                            Text: ="Suggested font size 16"
+                            Width: =480
+                            X: =91
+                            ZIndex: =26
 
                     ContainerHowView As groupContainer.verticalAutoLayoutContainer:
                         BorderColor: =RGBA(102, 182, 227, 1)
