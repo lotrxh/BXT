@@ -1388,7 +1388,7 @@
                                 Text: =""
                                 Width: =64
                                 X: =445
-                                Y: =212
+                                Y: =LabelPhaseName_17.Y
                                 ZIndex: =16
 
                             Image6_2 As image:
@@ -1416,7 +1416,7 @@
                                 Text: =""
                                 Width: =64
                                 X: =444
-                                Y: =472
+                                Y: =LabelPhaseName_18.Y
                                 ZIndex: =18
 
                         Image1 As image:
