@@ -1475,6 +1475,12 @@
                                             SubTaskCategory,
                                             Title = TempAllTechnology[@SubTaskId],
                                             CategoryName
+                                        ),
+                                        "SubSortNo",
+                                        LookUp(
+                                            SubTaskCategory,
+                                            Title = TempAllTechnology[@SubTaskId],
+                                            SubSortNo
                                         )
                                     ),
                                     BXTTypeText = "All" || BTXType = BXTTypeText,
@@ -1484,6 +1490,8 @@
                                         CategoryName = TaskText && SubTaskName = SubTaskText
                                     ).Title
                                 ),
+                                "SubSortNo",
+                                Ascending,
                                 "TechSoftNo",
                                 Ascending
                             )
