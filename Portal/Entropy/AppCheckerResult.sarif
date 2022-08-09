@@ -5267,396 +5267,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Button5_3.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Button5_3.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Button5_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Button4_3.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Button4_3.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Tool Detail Screen",
-                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Button4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerComments.Image3_4.AccessibleLabel"
                 }
               ],
@@ -6431,6 +6041,396 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Button5_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Button5_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Button5_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.GalleryTagTechList_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_19"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.BtnSecondIconOnly_21"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Image2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Button4_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Button4_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Tool Detail Screen",
+                "type": "'Tool Detail Screen'.Canvas1_4.DataCard1_4.ContainerInterested.GalleryInterested.Container6_5.Button4_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
         },
         {
           "locations": [
