@@ -446,7 +446,7 @@ Home As screen:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height-220
                 Items: |-
-                    =Sort(
+                    =SortByColumns(
                         AddColumns(
                             TechnologyCol,
                             "SubTaskName",
@@ -468,8 +468,10 @@ Home As screen:
                                 CategoryName
                             )
                         ),
-                        Created,
-                        Descending
+                        "SubSortNo",
+                        Ascending,
+                        "TechSoftNo",
+                        Ascending
                     )
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
