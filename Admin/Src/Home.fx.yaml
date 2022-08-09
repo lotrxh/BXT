@@ -1986,12 +1986,12 @@ Home As screen:
 
                         HtmlText1_8 As htmlViewer:
                             Color: =glbNeutralSecondaryColor
-                            Height: =24
-                            HtmlText: ="<font color=red>*</font> SortNumber"
+                            Height: =26
+                            HtmlText: ="<font color=red>*</font> Sort Number"
                             PaddingLeft: =0
                             PaddingRight: =0
                             PaddingTop: =0
-                            Width: =384
+                            Width: =382
                             X: =498
                             Y: =378
                             ZIndex: =53
