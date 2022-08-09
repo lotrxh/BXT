@@ -3026,7 +3026,7 @@ Home As screen:
                 OnSelect: |-
                     =Set(AddSubtask_Box,true);
                     UpdateContext({EditSubTask:false});
-                    UpdateContext({num1:0});
+                    UpdateContext({num1:Blank()});
                     Reset(ComboBox1_2);
                     Reset(TextInput2_25);
                     Reset(TextInput2_29)
@@ -3295,6 +3295,21 @@ Home As screen:
                     X: =658
                     ZIndex: =14
 
+                Label3_20 As label:
+                    Align: =Align.Center
+                    Color: =glbNeutralPrimaryColor
+                    Height: =42
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =10
+                    Text: =ThisItem.SubSortNo
+                    Width: =100
+                    X: =472
+                    ZIndex: =15
+
             Container2_4 As groupContainer.manualLayoutContainer:
                 Fill: =glbNeutralLighterColor
                 Height: =36
@@ -3348,6 +3363,21 @@ Home As screen:
                     Text: ="Modified by"
                     X: =658
                     ZIndex: =6
+
+                Label4_23 As label:
+                    Align: =Align.Center
+                    Color: =glbNeutralPrimaryColor
+                    FontWeight: =FontWeight.Semibold
+                    Height: =36
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =6
+                    Size: =11
+                    Text: ="SortNo"
+                    Width: =100
+                    X: =472
+                    ZIndex: =7
 
         ContainerTag As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -4728,7 +4758,7 @@ Home As screen:
                 Clear: =true
                 Color: =glbNeutralPrimaryColor
                 Default: |
-                    =If(EditSubTask, SubTaskGallery.Selected.SubTaskName,num1)
+                    =If(EditSubTask, SubTaskGallery.Selected.SubSortNo,num1)
                 FocusedBorderColor: =glbNeutralSecondaryColor
                 FocusedBorderThickness: =1
                 Format: =TextFormat.Number
