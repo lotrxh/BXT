@@ -757,7 +757,7 @@ Home As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =10
-                    Text: =ThisItem.SubSortNo&"/"&ThisItem.TechSoftNo
+                    Text: =ThisItem.SubSortNo&"-"&ThisItem.TechSoftNo
                     Width: =111
                     X: =431
                     ZIndex: =15
@@ -848,14 +848,15 @@ Home As screen:
                     Align: =Align.Center
                     Color: =glbNeutralPrimaryColor
                     FontWeight: =FontWeight.Semibold
-                    Height: =36
+                    Height: =35
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =6
                     Size: =11
                     Text: ="SortNo"
-                    X: =400
+                    Width: =130
+                    X: =420
                     ZIndex: =7
 
         ContainerTechniquesCreate As groupContainer.manualLayoutContainer:
