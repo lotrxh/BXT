@@ -2341,7 +2341,7 @@
                                 SecondaryNav,
                                 CategoryName = ThisItem.TaskName
                             ),
-                            "Modified",
+                            "SubSortNo",
                             Ascending
                         )
                     Layout: =Layout.Vertical
