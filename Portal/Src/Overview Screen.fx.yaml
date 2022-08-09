@@ -465,7 +465,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -508,9 +508,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Explore"
-                        Width: =47
+                        Width: =63
                         X: =62
-                        Y: =Image16_7.Y + 120
+                        Y: =1316
                         ZIndex: =8
 
                     Button5_9 As button:
@@ -522,7 +522,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -565,9 +565,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Frame"
-                        Width: =47
-                        X: =154
-                        Y: =Image16_7.Y + 120
+                        Width: =58
+                        X: =142
+                        Y: =1316
                         ZIndex: =9
 
                     Button5_10 As button:
@@ -579,7 +579,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -622,9 +622,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Discover"
-                        Width: =47
+                        Width: =62
                         X: =228
-                        Y: =Image16_7.Y + 120
+                        Y: =1316
                         ZIndex: =10
 
                     Button5_11 As button:
@@ -636,7 +636,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -679,9 +679,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Define"
-                        Width: =47
-                        X: =318
-                        Y: =Image16_7.Y + 120
+                        Width: =58
+                        X: =306
+                        Y: =1316
                         ZIndex: =11
 
                     Button5_12 As button:
@@ -693,7 +693,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -736,9 +736,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Design"
-                        Width: =47
+                        Width: =58
                         X: =389
-                        Y: =Image16_7.Y + 120
+                        Y: =1316
                         ZIndex: =12
 
                     Button5_13 As button:
@@ -750,7 +750,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -793,9 +793,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Validate"
-                        Width: =47
-                        X: =480
-                        Y: =Image16_7.Y + 120
+                        Width: =59
+                        X: =467
+                        Y: =1316
                         ZIndex: =13
 
                     Button5_14 As button:
@@ -807,7 +807,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -850,9 +850,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Incubate"
-                        Width: =47
+                        Width: =59
                         X: =553
-                        Y: =Image16_7.Y + 120
+                        Y: =1316
                         ZIndex: =14
 
                     Button5_15 As button:
@@ -864,7 +864,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -907,9 +907,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Scale"
-                        Width: =47
-                        X: =643
-                        Y: =Image16_7.Y + 120
+                        Width: =58
+                        X: =631
+                        Y: =1316
                         ZIndex: =15
 
                     Button5_16 As button:
@@ -921,7 +921,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -964,9 +964,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Run"
-                        Width: =47
+                        Width: =57
                         X: =717
-                        Y: =Image16_7.Y + 120
+                        Y: =1316
                         ZIndex: =16
 
                     Button5_17 As button:
@@ -978,7 +978,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         FocusedBorderThickness: =0
                         FontWeight: =FontWeight.Semibold
-                        Height: =17
+                        Height: =142
                         HoverColor: =RGBA(255, 255, 255, 0)
                         HoverFill: =
                         OnSelect: |-
@@ -1021,9 +1021,9 @@
                         RadiusTopRight: =0
                         Size: =6
                         Text: ="Iterate"
-                        Width: =47
-                        X: =804
-                        Y: =Image16_7.Y + 120
+                        Width: =54
+                        X: =796
+                        Y: =1316
                         ZIndex: =17
 
                     Container1 As groupContainer.horizontalAutoLayoutContainer:

@@ -59,9 +59,7 @@
     },
     "datasets": {},
     "dataSources": [
-      "Documents",
-      "SubTaskCategory",
-      "Technology"
+      "Documents"
     ],
     "dependencies": {},
     "dependents": [
