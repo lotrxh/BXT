@@ -1474,6 +1474,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesList.Container3_2.btnTechniquesSearch.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesList.Container3_2.btnTechniquesSearch.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home",
+                "type": "Home.Container.ContainerTechniquesList.Container3_2.btnTechniquesSearch"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesList.Container3_2.btnTechniquesSearch.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesList.Container3_2.btnTechniquesSearch.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home",
+                "type": "Home.Container.ContainerTechniquesList.Container3_2.btnTechniquesSearch"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Home.Container.ContainerTechniquesList.Container3_2.BtnSecondIconOnly_5.AccessibleLabel"
                 }
               ],
@@ -2014,19 +2074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.ComboBox1_23.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.TextInput2_30.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.ComboBox1_23.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.TextInput2_30.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.ComboBox1_23"
+                "type": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.TextInput2_30"
               }
             }
           ],
@@ -2044,19 +2104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.TextInput2_30.AccessibleLabel"
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.ComboBox1_23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.TextInput2_30.AccessibleLabel",
+                  "fullyQualifiedName": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.ComboBox1_23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Home",
-                "type": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.TextInput2_30"
+                "type": "Home.Container.ContainerTechniquesCreate.Canvas1_2.DataCard1_2.ContainerInfo.ComboBox1_23"
               }
             }
           ],
