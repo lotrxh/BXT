@@ -1484,7 +1484,7 @@
                                         CategoryName = TaskText && SubTaskName = SubTaskText
                                     ).Title
                                 ),
-                                "Modified",
+                                "TechSoftNo",
                                 Ascending
                             )
                         Layout: =Layout.Vertical
