@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-07-20T16:55:02.8920000Z",
+      "LastChangedTimeString": "2022-08-01T16:34:19.8370000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -32,6 +32,7 @@
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
       "Modified": "Modified",
+      "SubSortNo": "SubSortNo",
       "SubTaskDescription": "SubTaskDescription",
       "SubTaskName": "SubTaskName",
       "Test11": "PersonList",

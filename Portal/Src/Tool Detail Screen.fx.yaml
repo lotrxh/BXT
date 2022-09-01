@@ -998,7 +998,7 @@
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                DisplayFields: =["DisplayName"]
+                                DisplayFields: =["Claims"]
                                 FocusedBorderColor: =
                                 FocusedBorderThickness: =
                                 Height: =28
@@ -1007,7 +1007,7 @@
                                 InputTextPlaceholder: ="Find users"
                                 Items: =Choices(SubTaskCategory[@PersonList])
                                 PressedFill: =ColorFade(Self.Fill, -5%)
-                                SearchFields: =["DisplayName"]
+                                SearchFields: =["Claims"]
                                 SearchItems: =Choices(SubTaskCategory.PersonList,ComboBox1_4.SearchText)
                                 SelectionColor: =White
                                 SelectionFill: =glbThemePrimaryColor
@@ -1568,7 +1568,7 @@
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     DisabledFill: =RGBA(244, 244, 244, 1)
-                                    DisplayFields: =["DisplayName"]
+                                    DisplayFields: =["Claims"]
                                     FocusedBorderColor: =
                                     FocusedBorderThickness: =
                                     Height: =28
@@ -1577,7 +1577,7 @@
                                     InputTextPlaceholder: ="Find users"
                                     Items: =Choices(SubTaskCategory[@PersonList])
                                     PressedFill: =ColorFade(Self.Fill, -5%)
-                                    SearchFields: =["DisplayName"]
+                                    SearchFields: =["Claims"]
                                     SearchItems: =Choices(SubTaskCategory.PersonList,ComboBox1_5.SearchText)
                                     SelectionColor: =White
                                     SelectionFill: =glbThemePrimaryColor
@@ -1626,7 +1626,7 @@
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayFields: =["DisplayName"]
+                        DisplayFields: =["Claims"]
                         FocusedBorderColor: =
                         FocusedBorderThickness: =
                         Height: =32
@@ -1635,7 +1635,7 @@
                         InputTextPlaceholder: ="Find users"
                         Items: =Choices(SubTaskCategory[@PersonList])
                         PressedFill: =ColorFade(Self.Fill, -5%)
-                        SearchFields: =["DisplayName"]
+                        SearchFields: =["Claims"]
                         SearchItems: =Choices(SubTaskCategory.PersonList,ComboBox1_3.SearchText)
                         SelectionColor: =White
                         SelectionFill: =glbThemePrimaryColor
@@ -4069,7 +4069,7 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                DisplayFields: =["DisplayName","Mail"]
+                DisplayFields: =["Claims"]
                 FocusedBorderThickness: =1
                 Height: =36
                 HoverBorderColor: =ColorFade(Self.BorderColor, -20%)
@@ -4079,7 +4079,7 @@
                 Items: =Choices(SubTaskCategory[@PersonList])
                 PaddingLeft: =10
                 PressedFill: =ColorFade(Self.Fill, -5%)
-                SearchFields: =["DisplayName"]
+                SearchFields: =["Claims"]
                 SearchItems: =[]
                 SelectionColor: =glbThemePrimaryColor
                 SelectionFill: =ColorFade(Self.SelectionColor, 90%)

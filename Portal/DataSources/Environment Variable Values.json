@@ -15,14 +15,14 @@
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
       "EnvironmentVariableDefinitionId": "Environment Variable Definition",
-      "environmentvariablevalue_AsyncOperations": "System Jobs",
-      "environmentvariablevalue_BulkDeleteFailures": "Bulk Delete Failures",
-      "environmentvariablevalue_DuplicateBaseRecord": "Duplicate Records (environmentvariablevalue_DuplicateBaseRecord)",
-      "environmentvariablevalue_DuplicateMatchingRecord": "Duplicate Records (environmentvariablevalue_DuplicateMatchingRecord)",
-      "environmentvariablevalue_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
-      "environmentvariablevalue_PrincipalObjectAttributeAccesses": "Field Sharing",
-      "environmentvariablevalue_ProcessSession": "Process Sessions",
-      "environmentvariablevalue_SyncErrors": "Sync Errors",
+      "environmentvariablevalue_AsyncOperations": "系统作业",
+      "environmentvariablevalue_BulkDeleteFailures": "批量删除失败",
+      "environmentvariablevalue_DuplicateBaseRecord": "重复记录 (environmentvariablevalue_DuplicateBaseRecord)",
+      "environmentvariablevalue_DuplicateMatchingRecord": "重复记录 (environmentvariablevalue_DuplicateMatchingRecord)",
+      "environmentvariablevalue_MailboxTrackingFolders": "邮箱自动跟踪文件夹",
+      "environmentvariablevalue_PrincipalObjectAttributeAccesses": "字段共享",
+      "environmentvariablevalue_ProcessSession": "进程会话",
+      "environmentvariablevalue_SyncErrors": "同步错误",
       "environmentvariablevalueid": "Environment Variable Value",
       "environmentvariablevalueidunique": "EnvironmentVariableValueIdUnique",
       "importsequencenumber": "Import Sequence Number",
@@ -43,7 +43,7 @@
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
       "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
       "value": "Value",
-      "versionnumber": "Version Number"
+      "versionnumber": "版本号"
     },
     "PreferredName": "Environment Variable Values",
     "Type": "NativeCDSDataSourceInfo"
@@ -63,13 +63,13 @@
     }
   },
   {
-    "DisplayName": "Component State",
+    "DisplayName": "组件状态",
     "Name": "componentstate",
     "OptionSetInfoNameMapping": {
-      "0": "Published",
-      "1": "Unpublished",
-      "2": "Deleted",
-      "3": "Deleted Unpublished"
+      "0": "已发布",
+      "1": "未发布",
+      "2": "已删除",
+      "3": "已删除未发布内容"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": true,
@@ -129,11 +129,11 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Is Component Managed",
+    "DisplayName": "组件是否托管",
     "Name": "ismanaged",
     "OptionSetInfoNameMapping": {
-      "0": "Unmanaged",
-      "1": "Managed"
+      "0": "非托管",
+      "1": "托管"
     },
     "OptionSetIsBooleanValued": true,
     "OptionSetIsGlobal": true,
